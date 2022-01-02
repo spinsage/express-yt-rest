@@ -93,6 +93,6 @@ app.all('*', (req, res) => {
     res.status(404).json(notFoundResponse);
 });
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
     console.log(`Spinsage Server listening on port ${port}`);
 });
